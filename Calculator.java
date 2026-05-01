@@ -10,7 +10,7 @@ public class Calculator {
         System.out.println("Enter second number:");
         double b = input.nextDouble();
 
-        double result = a + b;
+        double result = a - b;
 
         System.out.println("Result: " + result);
     }
