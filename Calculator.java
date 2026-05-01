@@ -50,10 +50,7 @@ public class Calculator {
         }
         
 
-
-        // System.out.println("Result: " + result);
-
-        System.out.println("OUTPUT = " + result);
+        System.out.println("Result: " + result);
 
         input.close();
     }
