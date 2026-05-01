@@ -10,8 +10,34 @@ public class Calculator {
         System.out.println("Enter second number:");
         double b = input.nextDouble();
 
-        double result = a - b;
+
+
+        System.out.println("Choose operation (* /):");
+        char op = input.next().charAt(0);
+
+        double result = 0;
+
+        switch(op) {
+            case '*':
+                result = a * b;
+                break;
+
+            case '/':
+                if (b != 0)
+                    result = a / b;
+                else {
+                    System.out.println("Error: Cannot divide by zero");
+                    return;
+                }
+                break;
+
+            default:
+                System.out.println("Invalid operation");
+                return;
+        }
 
         System.out.println("Result: " + result);
+
+       
     }
 }
