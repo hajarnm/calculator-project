@@ -19,6 +19,10 @@ public class Calculator {
         System.out.println("3 - Multiplication (*)");
         System.out.println("4 - Division (/)");
 
+        System.out.println("5 - Power (a^b)");
+        System.out.println("6 - Square (a²)");
+        System.out.println("7 - Square Root (√a)");
+
         char op = input.next().charAt(0);
 
         double result;
@@ -42,6 +46,18 @@ public class Calculator {
                     return;
                 }
                 result = a / b;
+                break;
+
+              case '5':
+                result = Math.pow(a, b);
+                break;
+
+            case '6':
+                result = a * a;
+                break;
+
+            case '7':
+                result = Math.sqrt(a);
                 break;
 
             default:
